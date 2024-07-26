@@ -1,0 +1,34 @@
+.background-bar {
+    background-color: #FFDD00;
+    width: 100%;
+    height: 200px; /* Ajuste conforme necessário */
+    position: absolute;
+    top: 100px; /* Ajuste conforme necessário */
+    z-index: 0;
+}
+
+.login-container {
+    position: relative;
+    z-index: 1;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -100px; /* Ajuste conforme necessário */
+}
+
+.card-section {
+    background-color: #FFDD00;
+    padding: 20px;
+    border-radius: 10px;
+}
