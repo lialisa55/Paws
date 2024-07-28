@@ -24,7 +24,7 @@ class Animal(models.Model):
 
     nome = models.CharField(max_length=100)
     peso = models.DecimalField(max_digits=5, decimal_places=2)
-    idade_aproximada = models.IntegerField
+    idade_aproximada = models.IntegerField(null=True)
     sexo = models.CharField(max_length=1, choices=SEXO_CHOICES)
     microchip = models.CharField(max_length=15, unique=True, null=True, blank=True)
     especie = models.CharField(max_length=50)
