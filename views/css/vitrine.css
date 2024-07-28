@@ -1,10 +1,11 @@
 .background-bar {
-    background-color: #FFDD00;
+    background-color: #FFF08C;
     width: 100%;
-    height: 200px; /* Ajuste conforme necessário */
+    height: 20px; /* Ajuste conforme necessário */
     position: absolute;
     top: 100px; /* Ajuste conforme necessário */
-    z-index: 0;
+    z-index: -1;
+    padding-bottom: 100%;
 }
 
 .login-container {
@@ -14,21 +15,36 @@
 
 .login-form {
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 1 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .filter-section {
+    z-index: 2;
     background-color: #FFF;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: -100px; /* Ajuste conforme necessário */
+    margin-bottom: -45px;
 }
 
 .card-section {
-    background-color: #FFDD00;
+    background-color: #FFF08C;
     padding: 20px;
     border-radius: 10px;
 }
+
+.text-title-page{
+    color: #199292;
+    margin-top: -100px;
+    margin-bottom: 7rem;
+    margin-left: 20rem;
+}
+
+.jua-regular {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }

@@ -11,6 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,24 +21,167 @@
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-5">
-                    <h1 class="fw-bold lh-lg ps-4 "><a class=" text-decoration-none" style="color: #199292;"
+                    <h1 class="fw-bold lh-lg ps-4 "><a class="jua-regular text-decoration-none" style="color: #199292;"
                             href="">Paws</a></h1>
                 </div>
                 <div class="col-6">
-                    <h3 class="lh-lg "><a class="text-body-secondary text-decoration-none" href="">Quero Adotar</a> | <a
-                            class="text-body-secondary text-decoration-none" href="">Quero doar</a></h3>
+                    <h3 class="lh-lg "><a class="jua-regular text-body-secondary text-decoration-none" href="">Quero
+                            Adotar</a> | <a class="jua-regular text-body-secondary text-decoration-none" href="">Quero doar</a></h3>
                 </div>
                 <div class="col-1">
-                    <h3 class="lh-lg"><a class="text-body-secondary text-decoration-none" href="">Entrar</a></h3>
+                    <h3 class="lh-lg"><a class="text-body-secondary text-decoration-none jua-regular" href="">Entrar</a></h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <hr class="" style="border-top: 8px solid #FFDD00;" />
+                    <hr class="" style="border-top: 8px solid #FFDD00;margin-bottom: 9rem;" />
                 </div>
             </div>
         </div>
+        <!-- <br><br><br><br><br><br><br> -->
     </header>
+
+    <!-- Barra amarela de fundo -->
+    <div class="background-bar"></div>
+
+    <div class="row">
+        <div class="col-5">
+            <h2 class="jua-regular lh-lg text-title-page">Encontre seu novo amigo</h2>
+        </div>
+    </div>
+
+    <!-- Seção de filtros -->
+    <div class="container filter-section">
+        <div class="row">
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option selected>Todas as espécies</option>
+                    <!-- outras opções -->
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option selected>Todos os sexos</option>
+                    <!-- outras opções -->
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option selected>Todos os portes</option>
+                    <!-- outras opções -->
+                </select>
+            </div>
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Nome do bicho">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option selected>Pernambuco</option>
+                    <!-- outras opções -->
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option selected>Todas as Cidades</option>
+                    <!-- outras opções -->
+                </select>
+            </div>
+            <div class="col-md-3 offset-md-3">
+                <button class="btn btn-primary w-100" style="background-color: #800080; border: none;">Buscar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de cartões -->
+    <div class="container card-section mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../img/dog1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate</h5>
+                        <p class="card-text">SP, São Paulo. ONG Coração de Mãe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../img/dog2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Biscoito</h5>
+                        <p class="card-text">SP, São Paulo. ONG Coração de Mãe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../img/dog3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Formiga</h5>
+                        <p class="card-text">SP, São Paulo. ONG Coração de Mãe.</p>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../img/dog4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mel</h5>
+                        <p class="card-text">SP, São Paulo. ONG Coração de Mãe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../img/dog4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mel</h5>
+                        <p class="card-text">SP, São Paulo. ONG Coração de Mãe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../img/dog4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mel</h5>
+                        <p class="card-text">SP, São Paulo. ONG Coração de Mãe.</p>
+                    </div>
+                </div>
+                
+            <br>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../img/dog4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mel</h5>
+                        <p class="card-text">SP, São Paulo. ONG Coração de Mãe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../img/dog4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mel</h5>
+                        <p class="card-text">SP, São Paulo. ONG Coração de Mãe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../img/dog4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mel</h5>
+                        <p class="card-text">SP, São Paulo. ONG Coração de Mãe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
