@@ -1,0 +1,18 @@
+.background-bar {
+    background-color: #FFF08C;
+    width: 100%;
+    height: 100%; /* Ajuste conforme necessário */
+    position: absolute;
+    top: 100px; /* Ajuste conforme necessário */
+    z-index: -1;
+    padding-bottom: 90rem;
+}
+.login{    
+    z-index: 2;
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -100px; /* Ajuste conforme necessário */
+    margin-bottom: -45px;
+}
