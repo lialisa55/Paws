@@ -6,12 +6,8 @@ from .models import Resgatador, Animal
 # Create your views here.
 
 def vitrine(request):
-    lista_animais = Animal.objects.order_by("-data_atualizacao")[:5]
-    template = loader.get_template("vitrine/vitrine.html")
-    context = {
-            "lista_animais": lista_animais,
-    }
-    return HttpResponse(template.render(context, request))
+    animais = Animal.objects.all()
+    return render(request, 'vitrine/vitrine.html', {'animais': animais})
 
 def detalhes(request, id):
     animal = get_object_or_404(Animal, pk=id)
