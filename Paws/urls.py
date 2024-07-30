@@ -18,11 +18,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from vitrine import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('home.urls')),
-    path('vitrine/', include('vitrine.urls')),
+    path('vitrine/', views.vitrine, name='vitrine'),
+    path('vitrine/<int:id>', views
+
 ]
 
 if settings.DEBUG:
