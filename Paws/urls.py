@@ -23,9 +23,8 @@ from vitrine import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('home.urls')),
-    path('vitrine/', views.vitrine, name='vitrine'),
-    path('vitrine/<int:id>', views
-
+    path('vitrine/', include('vitrine.urls')),
+    path('vitrine/<int:id>', views.detalhes, name='detalhes'),
 ]
 
 if settings.DEBUG:
