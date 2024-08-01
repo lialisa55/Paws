@@ -22,14 +22,18 @@
     <header>
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
-                <div class="col-5">
-                    <h1 class="fw-bold lh-lg ps-4 "><a class="jua-regular text-decoration-none" style="color: #199292;" href="">Paws</a></h1>
+                <div class="col-1">
+                    <h1 class="fw-bold lh-lg ps-4 "><a class="jua-regular text-decoration-none" style="color: #199292;"
+                            href="">Paws</a></h1>
                 </div>
-                <div class="col-6">
-                    <h3 class="lh-lg "><a class="jua-regular text-body-secondary text-decoration-none" href="">Quero Adotar</a> | <a class="jua-regular text-body-secondary text-decoration-none" href="">Quero doar</a></h3>
+                <div class="col-10 d-flex justify-content-center">
+                    <h3 class="lh-lg "><a class="jua-regular text-body-secondary text-decoration-none"
+                            style="margin-right: 2rem;" href="">Quero Adotar</a> <a
+                            class="jua-regular text-body-secondary text-decoration-none" href="">Quero doar</a></h3>
                 </div>
                 <div class="col-1">
-                    <h3 class="lh-lg"><a class="text-body-secondary text-decoration-none jua-regular" href="">Entrar</a></h3>
+                    <h3 class="lh-lg"><a class="text-body-secondary text-decoration-none jua-regular" href="">Entrar</a>
+                    </h3>
                 </div>
             </div>
             <div class="row">
@@ -44,9 +48,11 @@
     <!-- Barra amarela de fundo -->
     <div class="background-bar"></div>
 
-    <div class="row">
-        <div class="col-12">
-            <h2 class="jua-regular lh-lg text-title-page">Encontre seu novo amigo</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="jua-regular lh-lg text-title-page">Encontre seu novo amigo</h2>
+            </div>
         </div>
     </div>
 
@@ -101,18 +107,20 @@
             <div class="col-md-3">
                 <!-- Botão para abrir a modal -->
                 <a data-bs-toggle="modal" data-bs-target="#ModalInfo_Pet_{{ animal.id }}">
-                <div class="card">
-                    <img src="{{ animal.foto.url }}" class="card-img-top" alt="{{ animal.nome }}">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ animal.nome }}</h5>
-                        <p class="card-text">{{ animal.estado }}, {{ animal.cidade }}. {{ animal.resgatador.nome }}.</p>
+                    <div class="card">
+                        <img src="{{ animal.foto.url }}" class="card-img-top" alt="{{ animal.nome }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ animal.nome }}</h5>
+                            <p class="card-text">{{ animal.estado }}, {{ animal.cidade }}. {{ animal.resgatador.nome }}.
+                            </p>
+                        </div>
                     </div>
-                </div>
                 </a>
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="ModalInfo_Pet_{{ animal.id }}" tabindex="-1" aria-labelledby="ModalInfo_PetLabel_{{ animal.id }}" aria-hidden="true">
+            <div class="modal fade" id="ModalInfo_Pet_{{ animal.id }}" tabindex="-1"
+                aria-labelledby="ModalInfo_PetLabel_{{ animal.id }}" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -147,4 +155,3 @@
 </body>
 
 </html>
-
