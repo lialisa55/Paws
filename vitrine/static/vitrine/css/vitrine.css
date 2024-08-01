@@ -39,7 +39,27 @@
     background-color: #FFF08C;
     padding: 1rem;
     border-radius: 10px;
-    max-width: 300px;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px; /* Limita a largura máxima do cartão */
+    margin: auto; /* Centraliza os cartões horizontalmente */
+}
+
+.card img {
+    max-height: 200px; /* Ajuste este valor conforme necessário */
+    object-fit: cover;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .text-title-page{
