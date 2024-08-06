@@ -1,3 +1,97 @@
 title-margin{
     padding-top: 400px;
 }
+
+/* Estilos básicos para dispositivos móveis (default) */
+body {
+    font-family: 'Jua', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+.jua-regular {
+    font-family: 'Jua', sans-serif;
+}
+
+.container-fluid {
+    padding: 0 15px;
+}
+
+hr {
+    border-top: 8px solid #FFDD00;
+    margin-bottom: 3rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.col-4 {
+    padding: 0;
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+header .col-4 a {
+    font-size: 1rem;
+}
+
+/* Estilos para tablets */
+@media (min-width: 600px) {
+    .container-fluid {
+        padding: 0 30px;
+    }
+
+    hr {
+        margin-bottom: 6rem;
+    }
+
+    header .col-4 a {
+        font-size: 1.25rem;
+    }
+}
+
+/* Estilos para desktops */
+@media (min-width: 900px) {
+    header {
+        padding: 20px 40px;
+        text-align: left;
+    }
+
+    .container-fluid {
+        padding: 0 60px;
+    }
+
+    hr {
+        margin-bottom: 9rem;
+    }
+
+    .row.align-items-center {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col-4 {
+        text-align: center;
+    }
+
+    .col-4.text-start {
+        text-align: left;
+    }
+
+    .col-4.text-end {
+        text-align: right;
+    }
+}
