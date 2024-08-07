@@ -22,8 +22,8 @@ from vitrine import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', include('home.urls')),
-    path('vitrine/', include('vitrine.urls')),
+    path('home/', include('home.urls'), name='home'),
+    path('vitrine/', include('vitrine.urls'), name='vitrine'),
     path('vitrine/<int:id>', views.detalhes, name='detalhes'),
 ]
 

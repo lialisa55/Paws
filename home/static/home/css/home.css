@@ -47,10 +47,14 @@ img {
 header .col-4 a {
     font-size: 1rem;
 }
+.barra-amarela{
+    border-top: 8px solid #FFDD00;
+    margin-bottom: 9rem;
+}
 
 
 /* Estilos para tablets */
-@media (max-width: 600px) {
+@media (min-width: 400px) {
     .container-fluid {
         padding: 0 30px;
     }
@@ -62,8 +66,9 @@ header .col-4 a {
     header .col-4 a {
         font-size: 1.25rem;
     }
-    .banner{        
-        width: 100%;
+    .banner{
+        max-height: 70%;
+        max-width: 100%;
     }
     .barra-amarela{
         border-top: 10px solid #FFDD00;
@@ -102,13 +107,9 @@ header .col-4 a {
 
     .col-4.text-end {
         text-align: right;
-    }    
-    .banner{
-        max-height: 70%;
-        max-width: 100%;
     }
     .barra-amarela{
         border-top: 8px solid #FFDD00;
-        margin-bottom: 9rem;
+        margin-bottom: 5rem;
     }
 }
