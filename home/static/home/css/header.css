@@ -1,28 +1,9 @@
-title-margin{
-    padding-top: 400px;
-}
-
 /* Estilos básicos para dispositivos móveis (default) */
-body {
-    font-family: 'Jua', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #ffffff;
-    padding: 10px;
-    text-align: center;
-}
-
-h1, h3 {
-    margin: 0;
-}
-
 .jua-regular {
-    font-family: 'Jua', sans-serif;
-}
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 .container-fluid {
     padding: 0 15px;
@@ -49,31 +30,36 @@ header .col-4 a {
 }
 
 
+.barra-amarela{
+    border-top: 10px solid #FFDD00;
+    margin-bottom: 1rem;
+}
+
+
 /* Estilos para tablets */
-@media (max-width: 600px) {
+@media (min-width: 400px) {
     .container-fluid {
         padding: 0 30px;
     }
 
     hr {
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
     }
 
     header .col-4 a {
         font-size: 1.25rem;
-    }
-    .banner{        
-        width: 100%;
-    }
+    }    
     .barra-amarela{
-        border-top: 10px solid #FFDD00;
-        margin-bottom: 1rem;
+        border-top: 5px solid #FFDD00;
+        margin-bottom: 4rem;
     }
-
 }
 
 /* Estilos para desktops */
-@media (min-width: 900px) {
+@media (min-width: 900px) {    
+    hr {
+        margin-bottom: 9rem;
+    }
     header {
         padding: 20px 40px;
         text-align: left;
@@ -82,11 +68,6 @@ header .col-4 a {
     .container-fluid {
         padding: 0 60px;
     }
-
-    hr {
-        margin-bottom: 9rem;
-    }
-
     .row.align-items-center {
         display: flex;
         justify-content: space-between;
@@ -102,13 +83,6 @@ header .col-4 a {
 
     .col-4.text-end {
         text-align: right;
-    }    
-    .banner{
-        max-height: 70%;
-        max-width: 100%;
     }
-    .barra-amarela{
-        border-top: 8px solid #FFDD00;
-        margin-bottom: 9rem;
-    }
+    
 }
